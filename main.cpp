@@ -34,17 +34,14 @@ void testCondom(unsigned int i, Condom<int> c){
 
 int main(){
 	Condom<int> x = 15;
+	Condom<int> y = x;
 
-	int count = 1000;
-	//cin >> count;
+	cout << x << endl;
+	cout << y << endl;
 
-	for(int i = 0; i < count; i++){
-		for(int j = 0; j < count; j++){
-			for(int k = 0; k < count; k++){
-				Condom<int> y = x;
-			}
-		}
-	}
+	x++;
 
+	cout << x << endl;
+	cout << y << endl;
 	return 0;
 }
